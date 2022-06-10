@@ -168,20 +168,26 @@ function createDiv(height, width) {
   return (div);
 }
 // ]]>
+
+document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    }, false);
 </script>
 <style>
     .button {
-  border: none;
-  color: black;
+  border-radius: 10;
+  color: white;
+  background-color: black;
   padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
                 }
+    button:hover {
+      border-color: red;
+    }
 </style>
 </head>
 
